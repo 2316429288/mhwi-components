@@ -2,7 +2,7 @@
 	<view class="mhwi-sidebar flex flex-column align-center" :style="{height: $windowHeight + 'px'}"
 		:class="show? '':'active'">
 		<view v-if="show" class="mhwi-sidebar-head flex align-center justify-between">
-			<image src="@/static/image/logo_iceborne.png" mode="widthFix" style="width: 200rpx;" />
+			<image src="@/static/image/logo_iceborne.png" style="width: 7vw;height: 9vh;" />
 			<view class="iconfont arrow-back flex justify-end" @click="show = false" />
 		</view>
 		<view v-else class="mhwi-sidebar-head flex align-center justify-end">
@@ -90,12 +90,12 @@
 		background: #ededed;
 		opacity: 80%;
 		padding: 0rpx 20rpx;
-		transition: transform 1s;
-		transform: translateX(0rpx);
+		transition: width 1s;
+		// transform: translateX(0rpx);
 	}
 
 	.mhwi-sidebar.active {
-		transform: translateX(-300rpx);
+		width: 5%;
 	}
 
 	.mhwi-sidebar-head {
